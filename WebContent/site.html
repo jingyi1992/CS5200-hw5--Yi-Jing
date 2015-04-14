@@ -1,0 +1,82 @@
+<a href="api/site">Find All Sites</a>
+<br/>
+<a href="api/site/1">Find Site with ID = 1</a>
+<br/>
+<a href="api/site/2">Find Site with ID = 2</a>
+
+<script src="js/jquery.js"></script>
+
+<br/>
+<input id="id" placeholder="Site ID" class="form-control"/>
+<input id="name" placeholder="Site Name" class="form-control"/>
+<input id="latitude" placeholder="Site Latitude" class="form-control"/>
+<input id="longitude" placeholder="Site Longitude" class="form-control"/>
+<button id="create" class="btn btn-block btn-primary">Create</button>
+<button id="read" class="btn btn-block btn-primary">Read</button>
+<button id="update" class="btn btn-block btn-primary">Update</button>
+<button id="delete" class="btn btn-block btn-primary" onclick= "removeHandler()">Delete</button>
+
+<script>
+
+
+$(function()
+		{
+			//$("#delete").click(removeSite(2));
+		});
+		
+function removeHandler() {
+	var id = $("#id").val();
+	removeSite(id);
+}
+
+function removeSite(id)
+{
+	
+	$.ajax(
+	{
+		url: "api/site/"+id,
+		type: "delete",
+		dataType: "json",
+		contentType: "application/json",
+		success: function(response) {
+			console.log(response);
+		},
+		error: function(response) {
+			console.log(response);
+		}
+	});
+}
+
+function updateSite(id)
+{
+	$.ajax(
+			{
+				url: "api/site/"+id,
+				data: JSON.stringify(site),
+				type: "put",
+				dataType: "json",
+				contentType: "application/json",
+				success: function(response) {
+					console.log(response);
+				},
+				error: function(response) {
+					console.log(response);
+				}
+			});
+}
+
+function createSite(site) {
+	
+	$.ajax({
+		url : "http://localhost:8080/JWS/api/site",
+		type:"post",
+		data: JSON.stringify(site),
+		dataType: "json",
+		contentType: "application/json",
+		success:function(response) {
+			console.log(response);
+		}
+	});
+}
+	
+</script>

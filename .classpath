@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_60">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="src/oauth-client-1.19.jar"/>
+	<classpathentry kind="lib" path="src/oauth-server-1.19.jar"/>
+	<classpathentry kind="lib" path="src/oauth-signature-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jackson-annotations-2.5.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/jackson-core-2.5.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/jackson-databind-2.5.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="src/jackson-jaxrs-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/jackson-xc-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/jersey-apache-client-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-atom-abdera-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-client-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-core-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-guice-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-json-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-multipart-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-server-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-simple-server-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jersey-spring-1.19.jar"/>
+	<classpathentry kind="lib" path="src/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="src/jsr311-api-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/jersey-servlet-1.19.jar"/>
+	<classpathentry kind="lib" path="src/javax.servlet.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.34-bin.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/EclipseLink 2.5.2">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+			<attribute name="owner.project.facets" value="jpt.jpa"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
